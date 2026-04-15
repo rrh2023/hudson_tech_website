@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HudsonTech LLC — Freelance Software Development</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>HudsonTech<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.cta">Get in Touch</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-opt" data-lang="en">EN</span>
+          <span class="lang-sep">/</span>
+          <span class="lang-opt" data-lang="es">ES</span>
+        </button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> <span data-i18n="hero.badge">Based in Jersey City, NJ</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span data-i18n-html="hero.title1">We build software</span></span>
+        <span class="reveal-line"><span data-i18n-html="hero.title2">that <em class="gradient-text">moves</em> organizations</span></span>
+        <span class="reveal-line"><span data-i18n-html="hero.title3">forward.</span></span>
+      </h1>
+      <p class="hero-sub reveal" data-i18n="hero.sub">
+        Search Engine Optimization &amp; web development for Hudson County, NJ &amp; beyond.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn btn-primary">
+          <span data-i18n="hero.ctaPrimary">View Our Work</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Start a Project</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-label" data-i18n="hero.statClients">Clients Served</span>
+        </div>
+        <!-- <div class="stat-divider"></div>
+         <div class="stat">
+          <span class="stat-number" data-count="9000">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Labor Hours Saved</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-count="64">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Properties Analyzed</span>
+        </div> -->
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal" data-i18n="services.tag">What We Do</span>
+        <h2 class="section-title reveal" data-i18n-html="services.title">
+          Engineering solutions<br />at the intersection of<br /><span class="gradient-text">code & community.</span>
+        </h2>
+        <p class="section-sub reveal" style="color: var(--text-2); font-size: 1.0625rem; max-width: 600px; margin-top: 16px; line-height: 1.7;" data-i18n="services.sub">Freelance software development & search engine optimization for Hudson County, NJ & beyond.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 data-i18n="services.card1Title">Software Development</h3>
+          <p data-i18n="services.card1Desc">Custom web &amp; mobile applications built with modern, full-stack architecture — from first wireframe to live deployment.</p>
+          <div class="service-tags">
+            <span>React.js</span><span>Node.js</span><span>Python</span><span>SQL</span><span>MongoDB</span><span>Flask</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <!-- <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a5 5 0 015 5c0 3-5 8-5 8s-5-5-5-8a5 5 0 015-5z"/><circle cx="12" cy="7" r="1.5"/><path d="M5 21l3.5-7M19 21l-3.5-7"/></svg>
+          </div>
+          <h3>Data Pipelines</h3>
+          <p>Automated data ingestion, transformation, and analytics platforms powered by Python, AWS, and third-party APIs.</p>
+          <div class="service-tags">
+            <span>Python</span><span>AWS</span><span>APIs</span>
+          </div>
+        </div> -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M8 11h6M11 8v6"/></svg>
+          </div>
+          <h3 data-i18n="services.card2Title">Search Engine Optimization</h3>
+          <p data-i18n="services.card2Desc">Get found by the people searching for you — technical SEO, on-page optimization, and local search strategy for Hudson County businesses.</p>
+          <div class="service-tags">
+            <span data-i18n="services.tag1">Local SEO</span><span data-i18n="services.tag2">Analytics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>React</span><span class="marquee-dot"></span>
+        <span>Node.js</span><span class="marquee-dot"></span>
+        <span>Express.js</span><span class="marquee-dot"></span>
+        <span>MongoDB</span><span class="marquee-dot"></span>
+        <span>Python</span><span class="marquee-dot"></span>
+        <span>AWS Lambda</span><span class="marquee-dot"></span>
+        <span>DynamoDB</span><span class="marquee-dot"></span>
+        <span>API Gateway</span><span class="marquee-dot"></span>
+        <span>Cognito</span><span class="marquee-dot"></span>
+        <span>Vercel</span><span class="marquee-dot"></span>
+        <span>Netlify</span><span class="marquee-dot"></span>
+        <span>Stripe</span><span class="marquee-dot"></span>
+        <span>Claude AI</span><span class="marquee-dot"></span>
+        <span>FastAPI</span><span class="marquee-dot"></span>
+        <span>Tailwind CSS</span><span class="marquee-dot"></span>
+        <span>React</span><span class="marquee-dot"></span>
+        <span>Node.js</span><span class="marquee-dot"></span>
+        <span>Express.js</span><span class="marquee-dot"></span>
+        <span>MongoDB</span><span class="marquee-dot"></span>
+        <span>Python</span><span class="marquee-dot"></span>
+        <span>AWS Lambda</span><span class="marquee-dot"></span>
+        <span>DynamoDB</span><span class="marquee-dot"></span>
+        <span>API Gateway</span><span class="marquee-dot"></span>
+        <span>Cognito</span><span class="marquee-dot"></span>
+        <span>Vercel</span><span class="marquee-dot"></span>
+        <span>Netlify</span><span class="marquee-dot"></span>
+        <span>Stripe</span><span class="marquee-dot"></span>
+        <span>Claude AI</span><span class="marquee-dot"></span>
+        <span>FastAPI</span><span class="marquee-dot"></span>
+        <span>Tailwind CSS</span><span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WORK / CASE STUDIES ===== -->
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal" data-i18n="work.tag">Selected Work</span>
+        <h2 class="section-title reveal" data-i18n-html="work.title">
+          Products that serve<br /><span class="gradient-text">real communities.</span>
+        </h2>
+      </div>
+
+      <div class="projects">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-visual">
+            <div class="project-mockup mockup-1">
+              <div class="mockup-browser">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-screen mockup-screen-img">
+                  <img src="assets/muse-map.jpg" alt="Muse Map - Jersey City Cultural Calendar" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category" data-i18n="work.museCat">Non-Profit Platform</span>
+            <h3 class="project-title">Muse Map</h3>
+            <p class="project-desc" data-i18n-html="work.museDesc">A subscription-based MERN platform for <a href="https://www.jerseycitypoetryfestival.org/">Jersey City's Poet Laureate, Melida Rodas.</a>  Local artists discover and post cultural events on an interactive map with calendar integration and Stripe-powered paywalled content.</p>
+            <div class="project-tech">
+              <span>Stripe</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>Vercel</span>
+            </div>
+            <a href="https://musemapjc.com/" class="project-link" target="_blank" rel="noopener">
+              <span data-i18n="work.viewProject">View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reverse reveal">
+          <div class="project-visual">
+            <div class="project-mockup mockup-2">
+              <div class="mockup-browser">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <div class="mockup-screen mockup-screen-img">
+                  <img src="assets/houses4us.jpg" alt="Houses 4 Us - Affirmative Fair Housing Marketing Plan Tool" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category" data-i18n="work.housesCat">Civic Automation</span>
+            <h3 class="project-title">HousesRUS</h3>
+            <p class="project-desc" data-i18n-html="work.housesDesc">Built for <a href="https://www.quetzalconsultingnj.com/affordablehousingstock" target="_blank" rel="noopener">Quetzal Consulting,</a> this project automates Affirmative Fair Housing Marketing Plan reports for Jersey City's Department of Affordable Housing, eliminating manual Census data lookup for real estate clients.</p>
+            <div class="project-tech">
+              <span>React</span><span>FastAPI</span><span>U.S. Census API</span><span>Vercel</span>
+            </div>
+            <a href="https://houses4us.vercel.app/" class="project-link" target="_blank" rel="noopener">
+              <span data-i18n="work.viewProject">View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <span class="section-tag reveal" data-i18n="about.tag">About</span>
+          <h2 class="section-title reveal" data-i18n-html="about.title">
+            A freelance developer<br />who's shipped at<br /><span class="gradient-text">every scale.</span>
+          </h2>
+        </div>
+        <div class="about-right">
+          <div class="about-bio reveal">
+            <p data-i18n-html="about.bio1">I'm <strong>Roberto Rodas-Herndon</strong>, a Boston University Computer Science graduate & software developer. While at Boston University, I served as <strong>President of the Hack4Impact chapter (2021–2023)</strong>, leading a student-run team that built free software for non-profits — the same mission that inspired the founding of HudsonTech.</p>
+            <p data-i18n-html="about.bio2">From navigating <strong>Pinterest's</strong> codebase at their headquarters in San Francisco alongside senior engineers, to providing technical insights across the enterprise at <strong>PSEG</strong>, I bring big-company engineering rigor to organizations that need it most — those shaping their communities.</p>
+            <p data-i18n-html="about.bio3">Every project ships with modern architecture and a focus on real-world impact. I'm also <strong>bilingual (English & Spanish)</strong>, which helps me serve Hudson County's diverse communities directly in their language.</p>
+          </div>
+          <div class="about-timeline reveal">
+            <div class="timeline-item">
+              <span class="timeline-year">2026</span>
+              <div>
+                <strong data-i18n="timeline.role1">Founded HudsonTech LLC</strong>
+                <p>Jersey City, NJ</p>
+                <p class="timeline-desc" data-i18n="timeline.desc1">Search Engine Optimization &amp; web development for Hudson County, NJ &amp; beyond.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2024</span>
+              <div>
+                <strong data-i18n="timeline.role2">Data Scientist — PSEG</strong>
+                <p>Newark, NJ</p>
+                <p class="timeline-desc" data-i18n="timeline.desc2">Public Service Enterprise Group — one of the largest publicly-traded energy & utility companies in the U.S., serving millions of customers across New Jersey.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2023</span>
+              <div>
+                <strong data-i18n="timeline.role3">Data Engineer — PowerOptions</strong>
+                <p>Boston, MA</p>
+                <p class="timeline-desc" data-i18n="timeline.desc3">New England's largest energy-buying consortium, helping non-profits and public entities negotiate better rates on electricity & natural gas.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2022</span>
+              <div>
+                <strong data-i18n="timeline.role4">Software Engineer Intern — Pinterest</strong>
+                <p>San Francisco, CA</p>
+                <p class="timeline-desc" data-i18n="timeline.desc4">Image-sharing and social media platform headquartered in San Francisco, where I built internal observability tools alongside senior engineers.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2021</span>
+              <div>
+                <strong data-i18n="timeline.role5">President — BU Hack4Impact</strong>
+                <p>Boston, MA · 2021–2023</p>
+                <p class="timeline-desc" data-i18n="timeline.desc5">A national network of college-student chapters that build free software for non-profits. I led the Boston University chapter for two years.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-glow"></div>
+        <span class="section-tag reveal" data-i18n="contact.tag">Start a Project</span>
+        <h2 class="contact-title reveal" data-i18n-html="contact.title">
+          Let's build something<br /><span class="gradient-text">that matters.</span>
+        </h2>
+        <div class="contact-actions reveal">
+          <a href="https://calendly.com/hudsontechllc-pm/30min" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <span data-i18n="contact.cta">Let's Chat</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+        </div>
+        <div class="contact-links reveal">
+          <a href="mailto:hudsontechllc@pm.me?subject=Inquiry">hudsontechllc@pm.me</a>
+          <a href="https://github.com/rrh2023" target="_blank" rel="noopener">Portfolio</a>
+          <a href="https://linkedin.com/in/roberto-herndon" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">
+        <span class="logo-bracket">&lt;</span>HudsonTech<span class="logo-bracket"> /&gt;</span>
+      </span>
+      <span class="footer-copy" data-i18n="footer.copy">&copy; 2026 HudsonTech LLC. Jersey City, NJ.</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
