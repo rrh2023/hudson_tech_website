@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -iE \"\\\\.\\(png|jpg|jpeg|webp\\)$\")"
+      "Bash(grep -iE \"\\\\.\\(png|jpg|jpeg|webp\\)$\")",
+      "Bash(node -e \"console.log\\(require.resolve\\('sharp'\\)\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('PIL available'\\)\")",
+      "Bash(where magick:*)",
+      "Bash(npm --version)",
+      "Bash(powershell -Command \"[System.Reflection.Assembly]::LoadWithPartialName\\('System.Drawing'\\) | Out-Null; Write-Host 'System.Drawing available'\")",
+      "Bash(npm install:*)",
+      "Bash(node convert-logo.js)"
     ]
   }
 }

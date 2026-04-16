@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <!-- White background (JPEG needs a background) -->
+  <rect width="1200" height="1200" fill="#ffffff"/>
+
+  <!-- Soft purple halo behind the mark -->
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#6c63ff" stop-opacity="0.10"/>
+      <stop offset="60%" stop-color="#6c63ff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#6c63ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="600" cy="600" r="520" fill="url(#halo)"/>
+
+  <!-- Main logo mark: < H / T > -->
+  <g fill="#6c63ff">
+    <!-- Left bracket < -->
+    <path d="M 215 420
+             L 80 600
+             L 215 780
+             L 255 750
+             L 150 600
+             L 255 450
+             Z"/>
+
+    <!-- Letter H -->
+    <rect x="335" y="420" width="60" height="360" rx="6"/>
+    <rect x="485" y="420" width="60" height="360" rx="6"/>
+    <rect x="335" y="570" width="210" height="60" rx="6"/>
+
+    <!-- Slash / -->
+    <path d="M 630 780
+             L 715 420
+             L 755 420
+             L 670 780
+             Z"/>
+
+    <!-- Letter T -->
+    <rect x="790" y="420" width="220" height="60" rx="6"/>
+    <rect x="870" y="480" width="60" height="300" rx="6"/>
+
+    <!-- Right bracket > -->
+    <path d="M 1040 420
+             L 1175 600
+             L 1040 780
+             L 1000 750
+             L 1105 600
+             L 1000 450
+             Z"/>
+  </g>
+
+  <!-- Wordmark under the main logo -->
+  <text x="600" y="920"
+        text-anchor="middle"
+        font-family="'Space Grotesk', 'Inter', -apple-system, sans-serif"
+        font-size="82"
+        font-weight="700"
+        letter-spacing="4"
+        fill="#6c63ff">HUDSONTECH</text>
+
+  <text x="600" y="985"
+        text-anchor="middle"
+        font-family="'Inter', -apple-system, sans-serif"
+        font-size="28"
+        font-weight="500"
+        letter-spacing="8"
+        fill="#8a82ff">LLC</text>
+</svg>
