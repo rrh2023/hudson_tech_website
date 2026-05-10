@@ -8,7 +8,8 @@
       "Bash(npm --version)",
       "Bash(powershell -Command \"[System.Reflection.Assembly]::LoadWithPartialName\\('System.Drawing'\\) | Out-Null; Write-Host 'System.Drawing available'\")",
       "Bash(npm install:*)",
-      "Bash(node convert-logo.js)"
+      "Bash(node convert-logo.js)",
+      "Bash(cp \"C:/Users/robhe/Downloads/IMG_6480.jpg\" \"C:/Users/robhe/OneDrive/Desktop/Portfolio/hudson-tech/assets/roberto.jpg\" && ls -la \"C:/Users/robhe/OneDrive/Desktop/Portfolio/hudson-tech/assets/roberto.jpg\")"
     ]
   }
 }
