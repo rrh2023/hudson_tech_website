@@ -210,7 +210,7 @@ document.querySelectorAll('.service-card').forEach((card) => {
       'nav.about': 'About',
       'nav.cta': 'Get in Touch',
 
-      'hero.badge': 'Solo software agency · Jersey City, NJ',
+      'hero.badge': 'Based in Jersey City, NJ',
       'hero.title1': 'Software',
       'hero.title2': 'that <em class="gradient-text">moves</em> organizations',
       'hero.title3': 'forward',
@@ -275,7 +275,7 @@ document.querySelectorAll('.service-card').forEach((card) => {
       'nav.about': 'Acerca',
       'nav.cta': 'Contáctame',
 
-      'hero.badge': 'Agencia de software individual · Jersey City, NJ',
+      'hero.badge': 'Ubicado en Jersey City, NJ',
       'hero.title1': 'Software',
       'hero.title2': 'que <em class="gradient-text">impulsa</em> organizaciones',
       'hero.title3': 'hacia adelante',
