@@ -212,7 +212,7 @@ document.querySelectorAll('.service-card').forEach((card) => {
 
       'hero.badge': 'Based in Jersey City, NJ',
       'hero.title1': 'Software',
-      'hero.title2': 'that <em class="gradient-text">moves</em> organizations',
+      'hero.title2': 'that <em class="gradient-text">moves</em> you',
       'hero.title3': 'forward',
       'hero.sub': 'Software development for New Jersey & beyond',
       'hero.ctaPrimary': 'View Our Work',
@@ -248,7 +248,7 @@ document.querySelectorAll('.service-card').forEach((card) => {
       'about.leadRole': 'Lead Developer & Founder',
       'about.leadBio': 'As the sole developer behind Hudson Technology Solutions, Roberto brings the engineering rigor he honed at Pinterest, PSEG, and PowerOptions directly to every client. No account managers, no offshore handoffs — just one engineer fully invested in your project from kickoff to launch.',
 
-      'about.bio1': 'Hudson Technology Solutions was founded by <strong>Roberto Rodas-Herndon</strong>, a Boston University Computer Science graduate. While at Boston University, he served as <strong>President of the Hack4Impact chapter (2021–2023)</strong>, leading a student-run team that built free software for non-profits — the same mission that inspired the founding of our agency.',
+      'about.bio1': 'Hudson Technology Solutions was founded by <strong>Roberto Rodas-Herndon</strong>, a Boston University Computer Science graduate. While at Boston University, he served as <strong>President of the Hack4Impact chapter (2021–2023)</strong>, leading a student-run team that built free software for non-profits — the same mission that inspired the founding of this agency.',
       'about.bio2': 'From navigating <strong>Pinterest\'s</strong> codebase at their headquarters in San Francisco alongside senior engineers, to providing technical insights across the enterprise at <strong>PSEG</strong>, we bring big-company engineering rigor to organizations that need it most — those shaping their communities.',
       'about.bio3': 'Every project ships with modern architecture and a focus on real-world impact. We\'re also <strong>bilingual (English &amp; Spanish)</strong>, which helps us serve Hudson County\'s diverse communities directly in their language.',
 
@@ -277,7 +277,7 @@ document.querySelectorAll('.service-card').forEach((card) => {
 
       'hero.badge': 'Ubicado en Jersey City, NJ',
       'hero.title1': 'Software',
-      'hero.title2': 'que <em class="gradient-text">impulsa</em> organizaciones',
+      'hero.title2': 'que <em class="gradient-text">te impulsa</em>',
       'hero.title3': 'hacia adelante',
       'hero.sub': 'Desarrollo de software para Nueva Jersey y más allá',
       'hero.ctaPrimary': 'Ver Nuestros Proyectos',
@@ -313,7 +313,7 @@ document.querySelectorAll('.service-card').forEach((card) => {
       'about.leadRole': 'Desarrollador Principal y Fundador',
       'about.leadBio': 'Como único desarrollador detrás de Hudson Technology Solutions, Roberto aporta el rigor de ingeniería que perfeccionó en Pinterest, PSEG y PowerOptions directamente a cada cliente. Sin gestores de cuenta, sin entregas a terceros — solo un ingeniero totalmente comprometido con tu proyecto desde el inicio hasta el lanzamiento.',
 
-      'about.bio1': 'Hudson Technology Solutions fue fundada por <strong>Roberto Rodas-Herndon</strong>, graduado en Ciencias de la Computación de Boston University. Durante sus estudios fue <strong>Presidente del capítulo de Hack4Impact (2021–2023)</strong>, liderando un equipo estudiantil que creaba software gratuito para organizaciones sin fines de lucro — la misma misión que inspiró la fundación de nuestra agencia.',
+      'about.bio1': 'Hudson Technology Solutions fue fundada por <strong>Roberto Rodas-Herndon</strong>, graduado en Ciencias de la Computación de Boston University. Durante sus estudios fue <strong>Presidente del capítulo de Hack4Impact (2021–2023)</strong>, liderando un equipo estudiantil que creaba software gratuito para organizaciones sin fines de lucro — la misma misión que inspiró la fundación de esta agencia.',
       'about.bio2': 'Desde navegar el código de <strong>Pinterest</strong> en su sede de San Francisco junto a ingenieros senior, hasta aportar perspectivas técnicas a toda la empresa en <strong>PSEG</strong>, traemos el rigor de ingeniería de grandes compañías a las organizaciones que más lo necesitan — aquellas que dan forma a sus comunidades.',
       'about.bio3': 'Cada proyecto se entrega con arquitectura moderna y enfoque en impacto real. También somos <strong>bilingües (inglés y español)</strong>, lo que nos permite servir a las diversas comunidades del condado de Hudson directamente en su idioma.',
 
